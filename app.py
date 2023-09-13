@@ -11,9 +11,6 @@ def hello_world():
 def hello_apple():
     return 'Hello Apple!'
 
-@app.route('/banana')
-def hello_banana():
-    return 'Hello Banana'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0",port= 5000)
